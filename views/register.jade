@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= 'Register'
+  form(action="/register" method="POST")
+    p Username:
+        input(type="text" name="username" placeholder="")
+    p Password:
+        input(type="text" name="password" placeholder="")
+    input(type="submit")
